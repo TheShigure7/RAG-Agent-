@@ -17,3 +17,4 @@ completion = client.chat.completions.create( #创建模型对象
 )
 for chunk in completion:
     print(chunk.choices[0].delta.content, end="", flush=True)
+
